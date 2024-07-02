@@ -1,33 +1,26 @@
 // src/components/multi-select.tsx
 
-import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
-import {
-  CheckIcon,
-  XCircle,
-  ChevronDown,
-  XIcon,
-  WandSparkles,
-} from "lucide-react";
+import { CheckIcon, ChevronDown, XCircle, XIcon } from "lucide-react";
+import * as React from "react";
 
-import { cn } from "@/lib/utils";
-import { Separator } from "@/components/ui/separator";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandItem,
+  CommandList,
+  CommandSeparator,
+} from "@/components/ui/command";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import {
-  Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-  CommandSeparator,
-} from "@/components/ui/command";
+import { Separator } from "@/components/ui/separator";
+import { cn } from "@/lib/utils";
 
 const multiSelectVariants = cva(
   "m-1 transition ease-in-out delay-150 duration-300",
@@ -87,7 +80,7 @@ export const MultiSelect = React.forwardRef<
     const [selectedValues, setSelectedValues] =
       React.useState<string[]>(defaultValue);
     const [isPopoverOpen, setIsPopoverOpen] = React.useState(false);
-    // const [isAnimating, setIsAnimating] = React.useState(false);
+    // // const [isAnimating, setIsAnimating] = React.useState(false);
 
     React.useEffect(() => {
       if (JSON.stringify(selectedValues) !== JSON.stringify(defaultValue)) {
@@ -149,7 +142,7 @@ export const MultiSelect = React.forwardRef<
             {...props}
             onClick={handleTogglePopover}
             className={cn(
-              "flex w-full p-1 shadow-sm border border-input font-sans min-h-10 items-center justify-between bg-inherit h-14",
+              "flex w-full p-1 shadow-sm border border-input font-sans h-auto items-center justify-between bg-inherit min-h-14",
               isPopoverOpen && "border-secondary",
               className
             )}
@@ -184,11 +177,13 @@ export const MultiSelect = React.forwardRef<
                   })}
                   {selectedValues.length > maxCount && (
                     <Badge
-                      className={cn(
-                        "text-foreground border-foreground/1",
-                        // isAnimating ? "animate-bounce" : "",
-                        multiSelectVariants({ variant, className })
-                      )}
+                      className="py-3"
+                      variant={"outline"}
+                      // className={cn(
+                      //   "text-foreground border-foreground/1",
+                      //   // isAnimating ? "animate-bounce" : "",
+                      //   multiSelectVariants({ variant, className })
+                      // )}
                       //   style={{ animationDuration: `${animation}s` }}
                     >
                       {`+ ${selectedValues.length - maxCount} more`}
