@@ -1,9 +1,9 @@
 "use server";
-import { formSchema } from "@/components/form";
 import { db } from "@/lib/db";
 import { z } from "zod";
 import { cookies } from "next/headers";
 import { v4 as uuidv4 } from "uuid";
+import { formSchema } from "@/components/form-section";
 
 export async function saveSearch(payload: z.infer<typeof formSchema>) {
   const cookieStore = cookies();
