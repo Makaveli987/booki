@@ -23,17 +23,15 @@ import useLocalStorage from "@/hooks/useLocalStorage";
 // import BookCard from "./book-card";
 // import ErrorAlert from "./error-alert";
 import { saveSearch } from "@/actions/save-search";
-import RecommendationCard, {
-  RecommendationCardProps,
-} from "./recommendation-card";
-import SectionHeading from "./section-heading";
-import { MultiSelect } from "./ui/multiple-select";
 import {
   CircleCheckIcon,
   Loader2Icon,
   ThumbsDownIcon,
   ThumbsUpIcon,
 } from "lucide-react";
+import RecommendationCard from "./recommendation-card";
+import SectionHeading from "./section-heading";
+import { MultiSelect } from "./ui/multiple-select";
 
 const GENRES: Option[] = [
   { label: "Mystery", value: "Mystery" },
