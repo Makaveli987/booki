@@ -207,46 +207,51 @@ export default function FormSection() {
         </Form>
       </div>
 
-      {recommendations?.length && !hasError ? (
-        <div
-          ref={recommendationsRef}
-          id="recommendations"
-          className="max-w-4xl mx-auto -translate-y-24"
-        >
-          <SectionHeading>Recommendations</SectionHeading>
-          <div className="flex flex-col gap-10 mt-20">
-            {recommendations.map((recommendation, index) => (
-              <RecommendationCard key={index} recommendation={recommendation} />
-            ))}
-          </div>
+      <div
+        ref={recommendationsRef}
+        id="recommendations"
+        className="max-w-4xl mx-auto -translate-y-24"
+      >
+        {recommendations?.length && !hasError ? (
+          <>
+            <SectionHeading>Recommendations</SectionHeading>
+            <div className="flex flex-col gap-10 mt-20">
+              {recommendations.map((recommendation, index) => (
+                <RecommendationCard
+                  key={index}
+                  recommendation={recommendation}
+                />
+              ))}
+            </div>
 
-          <div className="flex items-center justify-center gap-4 border rounded-[4px] p-4 mt-14  bg-primary text-title-white">
-            <p className="t text-lg">Was the recommendation helpful?</p>
-            {!usefullClicked ? (
-              <div className="flex">
-                <Button
-                  onClick={() => saveIsUsefull(true)}
-                  variant={"ghost"}
-                  className="hover:bg-transparent hover:text-emerald-500 px-2"
-                >
-                  <ThumbsUpIcon className="size-5" />
-                </Button>
-                <Button
-                  onClick={() => saveIsUsefull(false)}
-                  variant={"ghost"}
-                  className="hover:bg-transparent hover:text-destructive px-2"
-                >
-                  <ThumbsDownIcon className="size-5" />
-                </Button>
-              </div>
-            ) : (
-              <div>
-                <CircleCheckIcon className="size-6 text-emerald-500" />
-              </div>
-            )}
-          </div>
-        </div>
-      ) : null}
+            <div className="flex items-center justify-center gap-4 border rounded-[4px] p-4 mt-14  bg-primary text-title-white">
+              <p className="t text-lg">Was the recommendation helpful?</p>
+              {!usefullClicked ? (
+                <div className="flex">
+                  <Button
+                    onClick={() => saveIsUsefull(true)}
+                    variant={"ghost"}
+                    className="hover:bg-transparent hover:text-emerald-500 px-2"
+                  >
+                    <ThumbsUpIcon className="size-5" />
+                  </Button>
+                  <Button
+                    onClick={() => saveIsUsefull(false)}
+                    variant={"ghost"}
+                    className="hover:bg-transparent hover:text-destructive px-2"
+                  >
+                    <ThumbsDownIcon className="size-5" />
+                  </Button>
+                </div>
+              ) : (
+                <div>
+                  <CircleCheckIcon className="size-6 text-emerald-500" />
+                </div>
+              )}
+            </div>
+          </>
+        ) : null}
+      </div>
 
       {/* <div
         ref={recommendationsRef}

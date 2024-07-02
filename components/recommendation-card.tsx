@@ -41,7 +41,7 @@ export default function RecommendationCard({ recommendation }: any) {
         size={"lg"}
       >
         <a
-          className="w-full h-10 flex items-center justify-center"
+          className="w-full h-10 flex text-base items-center justify-center"
           target="_blank"
           href={`https://www.amazon.com/s?k=${encodeURIComponent(
             recommendation.title + " " + recommendation.author
