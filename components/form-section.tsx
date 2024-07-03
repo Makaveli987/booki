@@ -97,7 +97,6 @@ export default function FormSection() {
     //   .filter((entry: any) => entry.trim().length > 0)
     //   .map((entry: any) => entry.trim());
 
-    console.log("response", response);
     setRecommendations(response);
   }
 
@@ -224,10 +223,10 @@ export default function FormSection() {
               ))}
             </div>
 
-            <div className="flex items-center justify-center gap-4 border rounded-[4px] p-4 mt-14  bg-primary text-title-white">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 border rounded-[4px] p-4 mt-14  bg-primary text-title-white">
               <p className="t text-lg">Was the recommendation helpful?</p>
               {!usefullClicked ? (
-                <div className="flex">
+                <div className="flex gap-2 sm:gap-1">
                   <Button
                     onClick={() => saveIsUsefull(true)}
                     variant={"ghost"}

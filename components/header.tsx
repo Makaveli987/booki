@@ -6,15 +6,15 @@ export default function Header() {
   return (
     <nav className="max-w-5xl mx-auto py-4 sm:py-8 flex justify-between items-center px-4">
       <Logo />
-      <MobileNavigation />
+      {/* <MobileNavigation /> */}
 
-      <div className="hidden sm:flex gap-10 text-light-blue">
-        <a
+      <div className="flex gap-10 text-light-blue">
+        {/* <a
           href="/"
           className="hover:text-secondary transition-all cursor-pointer"
         >
           Most Popular
-        </a>
+        </a> */}
         <a
           href="#weekly-recommendations"
           className="hover:text-secondary transition-all cursor-pointer"

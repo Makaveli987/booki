@@ -37,3 +37,22 @@ model Usefull {
   usefull   Boolean
   createdAt DateTime @default(now())
 }
+
+model Subscription {
+  id         String   @id @default(uuid())
+  userEmail  String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  subscribed Boolean  @default(true)
+  books      Book[]
+}
+
+model Book {
+  id             String       @id @default(uuid())
+  subscriptionId String
+  title          String
+  author         String
+  description    String
+  recommended    Boolean      @default(false)
+  subscription   Subscription @relation(fields: [subscriptionId], references: [id])
+}
