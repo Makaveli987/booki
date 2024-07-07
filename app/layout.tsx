@@ -15,7 +15,7 @@ const fontSerif = FontSerif({
 });
 
 export const metadata: Metadata = {
-  title: "Booki | Find Your Next Favorite Book",
+  title: "Epic Reads | Find Your Next Favorite Book",
   description:
     "Discover the latest books you'll love. Our book recommendation app helps you find the perfect book based on your preferences.",
   icons: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "book recommendations, book app, best books, literary recommendations, discover new books, personalized book recommendations",
   robots: "index, follow",
   openGraph: {
-    title: "Best Book Recommendation App | Booki",
+    title: "Best Book Recommendation App | Epic Reads",
     description:
       "Discover the latest books you'll love. Our book recommendation app helps you find the perfect book based on your preferences.",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Book Recommendation App | Booki",
+    title: "Best Book Recommendation App | Epic Reads",
     description:
       "Discover the latest books you'll love. Our book recommendation app helps you find the perfect book based on your preferences.",
     images:

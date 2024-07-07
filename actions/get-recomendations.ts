@@ -49,7 +49,6 @@ export async function getRecommendations(
     role: "system",
     content:
       "Based on this information, please provide 5 book recommendations which correspond to my preferences. Explain why each book is a good choice for me taking my preferences into account. Response should look like this: 1. 'Title' ; 'Author' ; 'Description'. Title, author and Description should be separated by ';'",
-    // "Na osnovu ovih informacija, molimo vas da pružite 5 preporuka knjiga koje odgovaraju mojim preferencijama. Objasnite zašto je svaka knjiga dobar izbor za mene, uzimajući u obzir moje preferencije. Takodje obezbedi URL za sliku knjige. Odgovor treba da izgleda ovako: 1. 'Naslov' ; 'autor' ; 'opis' ; 'URL'",
   });
 
   const response = await openai.chat.completions.create({
