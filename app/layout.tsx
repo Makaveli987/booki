@@ -16,7 +16,7 @@ const fontSerif = FontSerif({
 });
 
 export const metadata: Metadata = {
-  title: "Epic Reads | Find Your Next Favorite Book",
+  title: "Epic Reads | Book Recommendation",
   description:
     "Discover the latest books you'll love. Our book recommendation app helps you find the perfect book based on your preferences.",
   icons: {
