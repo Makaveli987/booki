@@ -2,6 +2,8 @@ import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import { saveBuy } from "@/actions/save-buy";
+import { track } from '@vercel/analytics';
+
 
 export type RecommendationCardProps = {
   recommendation: {
@@ -15,6 +17,7 @@ export type RecommendationCardProps = {
 export default function RecommendationCard({ recommendation }: any) {
   async function saveClick() {
     await saveBuy(recommendation.title, recommendation.author);
+    track('Buy', { book: recommendation.title });
   }
 
   return (
