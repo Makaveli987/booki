@@ -21,7 +21,7 @@ export default function RecommendationCard({ recommendation }: any) {
     <div className="bg-white p-6 flex flex-col items-center md:flex-row md:items-start gap-6 shadow-custom rounded-[3px]">
       <div className="w-32 bg-red-900 shrink-0 overflow-hidden">
         <Image
-          src={recommendation.coverUrl}
+          src={recommendation?.coverUrl}
           alt={"Book cover"}
           objectPosition="center"
           width={128}
@@ -30,9 +30,9 @@ export default function RecommendationCard({ recommendation }: any) {
       </div>
       <div className="flex flex-col gap-4 py-2">
         <h3 className="text-xl text-primary font-serif font-semibold">
-          {recommendation.title} by {recommendation.author}
+          {recommendation?.title} by {recommendation?.author}
         </h3>
-        <p className="text-muted-foreground">{recommendation.description}</p>
+        <p className="text-muted-foreground">{recommendation?.description}</p>
       </div>
 
       <Button
@@ -44,7 +44,7 @@ export default function RecommendationCard({ recommendation }: any) {
           className="w-full h-10 flex text-base items-center justify-center"
           target="_blank"
           href={`https://www.amazon.com/s?k=${encodeURIComponent(
-            recommendation.title + " " + recommendation.author
+            recommendation?.title + " " + recommendation?.author
           )}`}
           rel="noopener noreferrer"
           onClick={() => saveClick()}

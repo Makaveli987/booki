@@ -3,10 +3,9 @@ import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import HowItWorks from "@/components/how-it-works";
 import WeeklyRecommendations from "@/components/weekly-recommendations";
-import { redirect } from "next/navigation";
+import React from "react";
 
-export default function Home() {
-  redirect("/book-recommendation");
+export default function page() {
   return (
     <div>
       <Hero />

@@ -31,9 +31,14 @@ export default function Hero() {
       <Header />
       <div className="relative flex flex-col gap-7 justify-center items-center mx-auto pt-16 pb-72">
         <h1 className="mx-auto text-5xl font-serif text-title-white font-semibold text-center">
-          Find your next favorite book
+          Find your next book to read
         </h1>
         <span className="w-16 h-1 bg-secondary"></span>
+
+        <p className="max-w-3xl text-center text-title-white/60">
+          Get personalized book recommendations tailored to your preferences.
+          Answer a few questions, and we&apos;ll suggest books you&apos;ll love!
+        </p>
       </div>
 
       <FormSection />

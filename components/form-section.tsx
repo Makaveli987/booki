@@ -199,7 +199,7 @@ export default function FormSection() {
                   <Loader2Icon className="animate-spin mr-2" /> Searching books
                 </>
               ) : (
-                <>See Recommendations</>
+                <>Get Recommendations</>
               )}
             </Button>
           </form>
