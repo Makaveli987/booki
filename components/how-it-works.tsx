@@ -5,7 +5,7 @@ export default function HowItWorks() {
   return (
     <section className="max-w-5xl mx-auto text-center py-20 mb-2">
       <div className="flex flex-col gap-6 mx-auto items-center justify-center max-w-3xl">
-        <h2 className="text-se text-3xl font-serif font-semibold text-center">
+        <h2 className="text-se text-3xl font-serif font-semibold text-center text-primary">
           How It Works
         </h2>
         <span className="w-12 h-1 bg-secondary block"></span>
