@@ -26,7 +26,7 @@ export default function FAQ() {
             <AccordionTrigger className="text-lg">
               Are the recommendations free?
             </AccordionTrigger>
-            <AccordionContent className="bg-white border-0 text-left text-muted-foreground text-base">
+            <AccordionContent className="bg-white border-0 md:text-left text-muted-foreground text-base">
               Yes, getting personalized book recommendations is completely free.
               We aim to help you discover great books without any cost. If you
               choose to purchase a book, we provide links to popular retailers,
@@ -37,7 +37,7 @@ export default function FAQ() {
             <AccordionTrigger className="text-lg">
               Can I get recommendations for multiple genres?
             </AccordionTrigger>
-            <AccordionContent className="bg-white border-0 text-left text-muted-foreground text-base">
+            <AccordionContent className="bg-white border-0 md:text-left text-muted-foreground text-base">
               Absolutely! You’re not limited to one genre. When you answer our
               questionnaire, you can choose multiple genres and themes, and
               we’ll provide recommendations that cover a variety of interests.
@@ -48,7 +48,7 @@ export default function FAQ() {
               Can I buy or download the recommended books directly from your
               site?
             </AccordionTrigger>
-            <AccordionContent className="bg-white border-0 text-left text-muted-foreground text-base">
+            <AccordionContent className="bg-white border-0 md:text-left text-muted-foreground text-base">
               We don’t sell books directly, but we provide convenient links to
               trusted retailers like Amazon, Barnes & Noble, and others. You can
               also find links to borrow books from libraries or access them via
@@ -59,7 +59,7 @@ export default function FAQ() {
             <AccordionTrigger className="text-lg">
               Do I need to create an account to get recommendations?
             </AccordionTrigger>
-            <AccordionContent className="bg-white border-0 text-left text-muted-foreground text-base">
+            <AccordionContent className="bg-white border-0 md:text-left text-muted-foreground text-base">
               No, you don’t need to create an account to receive personalized
               book suggestions. However, creating an account allows you to save
               your preferences, bookmark favorite books, and receive ongoing
@@ -70,7 +70,7 @@ export default function FAQ() {
             <AccordionTrigger className="text-lg">
               How often can I get new recommendations?
             </AccordionTrigger>
-            <AccordionContent className="bg-white border-0 text-left text-muted-foreground text-base">
+            <AccordionContent className="bg-white border-0 md:text-left text-muted-foreground text-base">
               You can return to the site anytime for fresh recommendations!
               Since your reading preferences can evolve, we encourage you to
               revisit whenever you’re looking for something new. You can also
@@ -81,7 +81,7 @@ export default function FAQ() {
             <AccordionTrigger className="text-lg">
               How accurate are the recommendations?
             </AccordionTrigger>
-            <AccordionContent className="bg-white border-0 text-left text-muted-foreground text-base">
+            <AccordionContent className="bg-white border-0 md:text-left text-muted-foreground text-base">
               Our recommendations are highly personalized, based on the
               information you provide. While we aim for accuracy, reading
               preferences are subjective, so we recommend trying a few different

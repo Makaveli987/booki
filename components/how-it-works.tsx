@@ -1,9 +1,8 @@
 import React from "react";
-import SectionHeading from "./section-heading";
 
 export default function HowItWorks() {
   return (
-    <section className="max-w-5xl mx-auto text-center py-20 mb-2">
+    <section className="max-w-5xl mx-auto py-20 mb-2">
       <div className="flex flex-col gap-6 mx-auto items-center justify-center max-w-3xl">
         <h2 className="text-se text-3xl font-serif font-semibold text-center text-primary">
           How It Works
@@ -16,12 +15,12 @@ export default function HowItWorks() {
         </p>
       </div>
 
-      <div className="mt-20 flex gap-10">
+      <div className="mt-20 flex flex-col md:flex-row gap-10 px-4 lg:px-0">
         <div className="w-full  bg-light-blue p-8 flex gap-6 flex-col items-start">
           <span className="size-12 bg-secondary rounded-full flex justify-center items-center text-primary font-serif font-semibold text-xl">
             1.
           </span>
-          <h3 className="text-primary text-2xl font-serif font-semibold">
+          <h3 className="text-primary text-left text-2xl font-serif font-semibold">
             Share your preferences
           </h3>
           <p className="text-left text-primary">
@@ -35,7 +34,7 @@ export default function HowItWorks() {
           <span className="size-12 bg-secondary rounded-full flex justify-center items-center text-primary font-serif font-semibold text-xl">
             2.
           </span>
-          <h3 className="text-primary text-2xl font-serif font-semibold">
+          <h3 className="text-primary text-2xl font-serif font-semibold text-left">
             Get Tailored Recommendations
           </h3>
           <p className="text-left text-primary">
@@ -47,12 +46,12 @@ export default function HowItWorks() {
         </div>
       </div>
 
-      <div className="mt-10 flex gap-10">
+      <div className="mt-10 flex flex-col md:flex-row gap-10 px-4 lg:px-0">
         <div className="w-full  bg-light-blue p-8 flex gap-6 flex-col items-start">
           <span className="size-12 bg-secondary rounded-full flex justify-center items-center text-primary font-serif font-semibold text-xl">
             3.
           </span>
-          <h3 className="text-primary text-2xl font-serif font-semibold">
+          <h3 className="text-primary text-2xl font-serif font-semibold text-left">
             Explore Your Recommended Books
           </h3>
           <p className="text-left text-primary">
@@ -67,7 +66,7 @@ export default function HowItWorks() {
           <span className="size-12 bg-secondary rounded-full flex justify-center items-center text-primary font-serif font-semibold text-xl">
             4.
           </span>
-          <h3 className="text-primary text-2xl font-serif font-semibold">
+          <h3 className="text-primary text-2xl font-serif font-semibold text-left">
             Start Reading
           </h3>
           <p className="text-left text-primary">

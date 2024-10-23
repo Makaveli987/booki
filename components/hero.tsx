@@ -35,7 +35,7 @@ export default function Hero() {
         </h1>
         <span className="w-16 h-1 bg-secondary"></span>
 
-        <p className="max-w-3xl text-center text-title-white/60">
+        <p className="max-w-3xl text-center text-title-white/60 px-4">
           Get personalized book recommendations tailored to your preferences.
           Answer a few questions, and we&apos;ll suggest books you&apos;ll love!
         </p>
